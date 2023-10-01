@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&family=Inter:wght@300;500;700;800&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;700;800&family=Poppins:wght@300;400;700;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Work+Sans:wght@200;300;400;500;700;800&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body {
+    background-color: #80858b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Start Delete Blog */
+.del-blog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #FFFFFF;
+}
+
+.del-blog p {
+    font-size: 20px;
+    position: relative;
+    padding: 20px 25px;
+}
+
+@media (max-width:992px) {
+    .del-blog p {
+        padding: 30px 25px 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .del-blog p {
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+
+.del-blog p::before {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #EBEFF2;
+}
+
+.del-blog form {
+    padding: 40px 25px 20px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:992px) {
+    .del-blog form {
+        padding: 50px 30px 40px;
+    }
+}
+
+.del-blog form a:nth-of-type(1) {
+    border: 0;
+    background-color: #F4F4F4;
+    padding: 11px 63px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.del-blog form a:nth-of-type(2) {
+    border: 0;
+    background-color: #FF1A1A;
+    padding: 11px 63px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+
+}
+
+@media (max-width:992px) {
+    .del-blog form a {
+        width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .del-blog form a {
+        width: 100%;
+    }
+}
+
+/* End Delete Blog */

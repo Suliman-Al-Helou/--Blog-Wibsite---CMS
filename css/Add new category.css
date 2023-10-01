@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&family=Inter:wght@300;500;700;800&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;700;800&family=Poppins:wght@300;400;700;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Work+Sans:wght@200;300;400;500;700;800&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body {
+    background-color: #80858b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Start Add Category */
+.add-category {
+    padding: 25px 30px 36px 40px;
+    background-color: white;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:767px) {
+    .add-category {
+        padding: 30px 20px;
+        width: 80%;
+    }
+}
+
+.add-category .text-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-category .text-content p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1D968D;
+}
+
+.add-category .text-content i {
+    color: #92929D;
+}
+
+.add-category form {
+    margin-top: 25px;
+}
+
+.add-category form label {
+    font-size: 18px;
+}
+
+.add-category form input {
+    border: 1px solid #B4B6C4;
+    padding: 12px 20px;
+    background: none;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.add-category form input:focus {
+    outline: none;
+}
+
+.add-category form input:focus::placeholder {
+    opacity: 0;
+}
+
+.add-category form .buttons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 70px;
+}
+
+@media (max-width:767px) {
+    .add-category form .buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 40px;
+    }
+}
+
+.add-category form .buttons button:nth-of-type(1) {
+    border: none;
+    background-color: #F4F4F4;
+    padding: 11px 79px;
+    border-radius: 4px;
+}
+
+.add-category form .buttons button:nth-of-type(2) {
+    border: none;
+    background-color: #1D968D;
+    color: #ffffff;
+    padding: 11px 79px;
+    border-radius: 4px;
+}
+
+@media (max-width:767px) {
+    .add-category form .buttons button {
+        width: 100%;
+    }
+}
+
+
+/* End Add Category */

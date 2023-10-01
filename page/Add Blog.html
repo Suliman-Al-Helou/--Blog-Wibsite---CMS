@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Blog</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- For Rest all Css Proparty -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Font Awosom -->
+    <link rel="stylesheet" href="css/Add Blog.css">
+    <!-- Main Css File -->
+</head>
+
+<body>
+    <!-- Start Add Blog -->
+    <div class="add-blog">
+        <div class="text-content">
+            <p>Add new Category</p>
+            <i class="fa fa-close"></i>
+        </div>
+        <form action="">
+            <div class="left-input">
+                <input type="file" class="file-input" id="file-input">
+                
+                <label for="file-input" class="file-lable"><i class="fa-regular fa-square-plus"></i></label>
+
+                <label for="title">Bolg Title</label>
+                <input type="text" class="title" id="title" placeholder="Blog name">
+                
+                <label for="publisher">Publisher name</label>
+                <input type="text"class="publisher" id="publisher" placeholder="Ex. Momen M. Reyad Sisalem">
+                
+                <label for="category" class="category-lable">Category</label>
+                <select name="category" class="category-select" id="category">
+                    <option>category-1</option>
+                    <option>category-2</option>
+                    <option>category-3</option>
+                </select>
+                
+                <button type="button">Cancel</button>
+            </div>
+            <div class="right-input">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" class="description" placeholder="Write the description"></textarea>
+                <button type="button">Done</button>
+            </div>
+        </form>
+    </div>
+    <!-- End Add Blog -->
+</body>
+
+</html>

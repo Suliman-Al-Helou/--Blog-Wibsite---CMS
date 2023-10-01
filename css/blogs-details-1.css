@@ -1,0 +1,150 @@
+/* Start Main Contetn */
+.boxs {
+    margin-top: 118px;
+}
+
+.boxs .filter ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:992px) {
+    .boxs .filter ul {
+        justify-content: flex-start;
+    }
+}
+
+.boxs .filter ul li a {
+    font-size: 18px;
+    border-radius: 4px;
+    color: black;
+    background-color: #F7F7F7;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+@media (max-width:767px) {
+    .boxs .filter ul li a {
+        font-size: 13px;
+    }
+}
+
+.boxs .filter ul li a:nth-of-type(1),
+.boxs .filter ul li a:nth-of-type(6) {
+    padding: 7px 38px;
+}
+
+.boxs .filter ul li a:nth-of-type(2) {
+    padding: 7px 29px;
+}
+
+.boxs .filter ul li a:nth-of-type(3),
+.boxs .filter ul li a:nth-of-type(5) {
+    padding: 7px 54px;
+}
+
+.boxs .filter ul li a:nth-of-type(4) {
+    padding: 7px 51px;
+}
+
+.boxs .filter ul li a:nth-of-type(6) {
+    padding: 7px 41px;
+}
+
+.boxs .filter ul li a:hover {
+    background-color: #1D968D;
+    color: #ffffff;
+}
+
+.boxs .all-boxs {
+    margin-top: 80px;
+}
+
+.boxs .box {
+    border-bottom: 1px solid #34376E;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    gap: 180px;
+}
+
+@media (max-width:992px) {
+    .boxs .box {
+        gap: 50px;
+        flex: 1;
+    }
+}
+@media (max-width:767px) {
+    .boxs .box{
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #34376e73;
+    }
+}
+
+.boxs .box:nth-of-type(1) {
+    padding-top: 0;
+}
+
+.boxs .box .text-cotent {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.boxs .box .text-cotent button {
+    font-size: 13px;
+    border-radius: 8px;
+    color: #FF974A;
+    background-color: #FFF4EC;
+    padding: 9px 25px 11px 9px;
+    border: none;
+    transition: all .3s;    
+}
+.boxs .box .text-cotent button:hover{
+    background-color:#FF974A ;
+    color: #FFF4EC;
+}
+.boxs .box .text-cotent p {
+    font-size: 13px;
+    color: #8E8E8E;
+}
+
+.boxs .box .text {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+@media (max-width:992px) {
+    .boxs .box .text {
+        gap: 30px;
+    }
+}
+
+.boxs .box .text p:nth-of-type(1) {
+    font-size: 30px;
+    color: #1D968D;
+    font-weight: bold;
+}
+@media (max-width:767px) {
+    .boxs .box .text p:nth-of-type(1){
+        font-size: 20px;
+    }
+}
+.boxs .box .text p:nth-of-type(2) {
+    font-size: 20px;
+}
+@media (max-width:767px) {
+    .boxs .box .text p:nth-of-type(2){
+        font-size:15px;
+    }
+}
+.boxs .box .text p:nth-of-type(2) span {
+    display: block
+}
+
+/* End Main Contetn */

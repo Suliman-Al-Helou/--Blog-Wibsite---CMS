@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&family=Inter:wght@300;500;700;800&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;700;800&family=Poppins:wght@300;400;700;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Work+Sans:wght@200;300;400;500;700;800&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --primary-color: #1D968D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FAFAFB;
+}
+
+/* Start Section Category  */
+main {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.category {
+    margin-top: 60px;
+}
+
+.category h4 {
+    font-size: 24px;
+    color: #171725;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.category .boxs {
+    padding: 20px;
+    border: 1px solid #E2E2EA;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.category .boxs .box-1,
+.category .boxs .box-2,
+.category .boxs .box-3,
+.category .boxs .box-4 {
+    background-color: rgba(29, 150, 141, 5%);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+    width: fit-content;
+    align-items: start;
+}
+
+@media (max-width:992px) {
+
+    .category .boxs .box-1,
+    .category .boxs .box-2,
+    .category .boxs .box-3,
+    .category .boxs .box-4 {
+        flex: 1;
+    }
+}
+
+.category .boxs .box-2 {
+    background-color: rgba(255, 151, 74, 5%);
+}
+
+.category .boxs .box-3 {
+    background-color: rgba(0, 121, 191, 5%);
+}
+
+.category .boxs .box-4 {
+    background-color: rgba(120, 61, 189, 5%);
+}
+
+.category .boxs .box-1 .text-content h3,
+.category .boxs .box-2 .text-content h3,
+.category .boxs .box-3 .text-content h3,
+.category .boxs .box-4 .text-content h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    color: var(--primary-color);
+}
+
+.category .boxs .box-2 .text-content h3 {
+    color: #FF974A;
+}
+
+.category .boxs .box-3 .text-content h3 {
+    color: #0079BF;
+}
+
+.category .boxs .box-4 .text-content h3 {
+    color: #783DBD;
+}
+
+.category .boxs .box-1 .text-content p:nth-of-type(1),
+.category .boxs .box-2 .text-content p:nth-of-type(1),
+.category .boxs .box-3 .text-content p:nth-of-type(1),
+.category .boxs .box-4 .text-content p:nth-of-type(1) {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.category .boxs .box-1 .text-content p:nth-of-type(2),
+.category .boxs .box-2 .text-content p:nth-of-type(2),
+.category .boxs .box-3 .text-content p:nth-of-type(2),
+.category .boxs .box-4 .text-content p:nth-of-type(2) {
+    font-size: 14px;
+    color: #6F6F6F;
+}
+
+.category .boxs .box-1 .text-content p:nth-of-type(2) i,
+.category .boxs .box-2 .text-content p:nth-of-type(2) i,
+.category .boxs .box-3 .text-content p:nth-of-type(2) i,
+.category .boxs .box-4 .text-content p:nth-of-type(2) i {
+    margin-right: 6px;
+}
+
+.category .boxs .box-1>a,
+.category .boxs .box-2>a,
+.category .boxs .box-3>a,
+.category .boxs .box-4>a {
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    background-color: #E4F0F0;
+    color: #FF3333;
+    padding: 7px;
+    font-size: 16px;
+}
+
+.category .boxs .box-2>i {
+    background-color: #FBF0E9;
+    border: 1px solid #FF974A;
+}
+
+.category .boxs .box-3>i {
+    background-color: #E1EDF6;
+    border: 1px solid #0079BF;
+}
+
+.category .boxs .box-4>i {
+    background-color: rgba(121, 61, 189, 10%);
+    border: 1px solid #783DBD;
+}
+
+.category .boxs .box-5 {
+    padding: 55px 46px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 267px;
+}
+
+.category .boxs .box-5 .text-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category .boxs .box-5 i {
+    color: #200E32;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.category .boxs .box-5 p {
+    font-size: 16px;
+    color: #272727;
+}
+
+@media (max-width:992px) {
+    .category .boxs .box-5 {
+        /* flex: 1; */
+        width: 100%;
+    }
+}
+
+/* End Section Category  */
